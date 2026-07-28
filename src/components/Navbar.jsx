@@ -1,5 +1,6 @@
 import React from 'react'
 
+
 const Navbar = () => {
   return (
     <nav className="flex justify-between items-center bg-gray-900 text-white px-6 py-4">
