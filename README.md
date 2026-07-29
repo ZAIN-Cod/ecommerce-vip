@@ -33,10 +33,6 @@ npm install
 npm run dev
 \`\`\`
 
-## 📸 Preview
-
-*(Add a screenshot of your project here)*
-
 ## 👨‍💻 Author
 
-Built by KING — Software Engineering student, building a Frontend + AI Automation freelance skillset.
+Built by ZAIN— Software Engineering student, building a Frontend + AI Automation freelance skillset.
