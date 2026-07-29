@@ -47,11 +47,22 @@ function App() {
                   <span className="text-gray-600">${item.price}</span>
                 </div>
               ))}
+
+              <div className="mt-6 flex flex-col gap-4 w-full max-w-md">
+                <div className="flex justify-between font-bold text-lg border-t pt-4">
+                  <span>Total:</span>
+                  <span>${cart.reduce((sum, item) => sum + item.price, 0).toFixed(2)}</span>
+                </div>
+                <button className="bg-gray-900 text-white py-3 rounded-lg font-semibold hover:bg-black active:scale-95 transition duration-300 cursor-pointer">
+                  Checkout
+                </button>
+              </div>
             </div>
           )}
         </div>
       )}
-      <Footer/>
+
+      <Footer />
     </div>
   )
 }
