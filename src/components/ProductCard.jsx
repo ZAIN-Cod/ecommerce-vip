@@ -1,8 +1,6 @@
-import React from 'react'
-
 import { useState, useEffect, useRef } from 'react'
 
-const ProductCard = ({ name, price, onAddToCart }) => {
+const ProductCard = ({ name, price, image, onAddToCart }) => {
   const [isVisible, setIsVisible] = useState(false)
   const cardRef = useRef(null)
 
@@ -30,7 +28,7 @@ const ProductCard = ({ name, price, onAddToCart }) => {
         isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
       }`}
     >
-      <img src="https://via.placeholder.com/200" alt="Product" className="rounded-md" />
+      <img src={image} alt={name} className="rounded-md w-full h-48 object-cover" />
       <h3 className="text-lg font-semibold mt-4">{name}</h3>
       <p className="text-gray-600 mt-1">${price}</p>
       <button
@@ -42,8 +40,5 @@ const ProductCard = ({ name, price, onAddToCart }) => {
     </div>
   )
 }
-
-
-
 
 export default ProductCard
